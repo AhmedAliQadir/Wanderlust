@@ -1,0 +1,313 @@
+Role & Objective
+
+You are a Senior Full-Stack Engineer & Cloud Architect.
+
+Your task is to design, implement, and deliver a fully production-ready Tour Booking Web Application using the MERN stack, following industry best practices, with clean architecture, security, scalability, and easy cloud deployment.
+
+The final output must be deployable, maintainable, and scalable — not a demo or prototype.
+
+Project Overview
+Project Name
+
+Tour Booking Platform
+
+Core Goal
+
+Build a modern web application where:
+
+Users can browse and book tours
+
+Admins can manage tours, bookings, and users
+
+The system is secure, scalable, and cloud-ready
+
+Tech Stack (Mandatory)
+Frontend
+
+React.js (with Vite or Next.js if beneficial)
+
+TypeScript (preferred)
+
+Tailwind CSS
+
+Axios or React Query
+
+React Hook Form + Zod validation
+
+Backend
+
+Node.js
+
+Express.js
+
+TypeScript
+
+RESTful API architecture
+
+Database
+
+MongoDB (Mongoose ODM)
+
+Authentication & Security
+
+JWT (access + refresh tokens)
+
+bcrypt password hashing
+
+Role-based access control (User / Admin)
+
+Secure HTTP headers (Helmet)
+
+Rate limiting
+
+Input sanitisation
+
+DevOps & Deployment
+
+Docker & Docker Compose
+
+Environment variables (.env)
+
+CI/CD ready
+
+Deployment-ready for:
+
+AWS (EC2 / ECS)
+
+Render / Railway
+
+Vercel (frontend)
+
+Nginx (reverse proxy)
+
+PM2 for backend process management
+
+System Architecture Requirements
+
+Design the system using clean architecture principles:
+
+client/
+ ├── src/
+ │   ├── components/
+ │   ├── pages/
+ │   ├── services/
+ │   ├── hooks/
+ │   ├── context/
+ │   ├── utils/
+ │   └── main.tsx
+
+server/
+ ├── src/
+ │   ├── config/
+ │   ├── controllers/
+ │   ├── services/
+ │   ├── routes/
+ │   ├── models/
+ │   ├── middlewares/
+ │   ├── utils/
+ │   └── app.ts
+ ├── server.ts
+ └── tests/
+
+Functional Requirements
+User Features
+
+User registration & login
+
+Secure authentication (JWT)
+
+Browse tours with filters (location, price, date)
+
+View tour details
+
+Book tours
+
+Cancel bookings
+
+View booking history
+
+Update profile details
+
+Admin Features
+
+Admin authentication
+
+Create, update, delete tours
+
+View all bookings
+
+Manage users
+
+Change booking status
+
+Admin dashboard with metrics
+
+Non-Functional Requirements
+
+Response time < 2 seconds
+
+Secure against OWASP Top 10
+
+Fully responsive UI
+
+Scalable backend
+
+Logging & error monitoring
+
+Graceful error handling
+
+Pagination for large datasets
+
+Database Models (Minimum)
+User
+
+name
+
+email
+
+password (hashed)
+
+role (user/admin)
+
+createdAt
+
+Tour
+
+title
+
+description
+
+location
+
+price
+
+duration
+
+availableDates
+
+maxCapacity
+
+Booking
+
+userId
+
+tourId
+
+bookingDate
+
+status (confirmed / cancelled / completed)
+
+paymentStatus (future-ready)
+
+API Requirements
+
+RESTful endpoints
+
+Versioned API (/api/v1)
+
+Proper HTTP status codes
+
+Centralised error handling
+
+Swagger / OpenAPI documentation
+
+Security Requirements
+
+Hash passwords using bcrypt
+
+JWT with refresh tokens
+
+Role-based route protection
+
+Input validation (Zod/Joi)
+
+Rate limiting on auth routes
+
+CORS properly configured
+
+Testing Requirements
+
+Unit tests (Jest)
+
+API tests (Supertest)
+
+Linting (ESLint)
+
+Formatting (Prettier)
+
+DevOps & Deployment Instructions
+Docker
+
+Create Dockerfile for frontend & backend
+
+Use docker-compose for local development
+
+Multi-stage builds for production
+
+Environment Configuration
+
+Separate .env for dev & prod
+
+Secrets not hardcoded
+
+Deployment Output
+
+Provide:
+
+Step-by-step deployment guide
+
+.env.example
+
+README.md with:
+
+Setup instructions
+
+API docs
+
+Deployment steps
+
+Scalability & Future Enhancements
+
+Prepare architecture for:
+
+Stripe / PayPal integration
+
+Email notifications
+
+CI/CD pipelines
+
+Redis caching
+
+Microservices split
+
+Kubernetes readiness
+
+Final Deliverables
+
+Fully working MERN application
+
+Production-grade folder structure
+
+Dockerised setup
+
+Deployment-ready configuration
+
+Clean, documented code
+
+README with clear instructions
+
+Quality Bar (IMPORTANT)
+
+Code must follow industry standards
+
+No hardcoded values
+
+No insecure patterns
+
+Modular & readable
+
+Suitable for real users and real traffic
+
+Act as a Senior Engineer
+
+Make architectural decisions independently where needed and document them clearly.
