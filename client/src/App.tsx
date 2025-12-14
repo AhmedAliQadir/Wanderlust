@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import TourDetails from "@/pages/tour-details";
 import AuthPage from "@/pages/auth-page";
+import AIPlanner from "@/pages/ai-planner";
 
 function Router() {
   return (
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/tours" component={Home} />
       <Route path="/tour/:id" component={TourDetails} />
       <Route path="/auth" component={AuthPage} />
+      <Route path="/ai-planner" component={AIPlanner} />
       <Route component={NotFound} />
     </Switch>
   );
